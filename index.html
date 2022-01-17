@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이귀령 포트폴리오</title>
+
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 레이아웃서식연결 -->
+    <link href="./css/layout.css" rel="stylesheet" type="text/css" />
+    <!-- 베이스서식연결 -->
+    <link href="./css/base.css" rel="stylesheet" type="text/css" />
+    <!-- 메인서식 -->
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- 폰트어썸 주소 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- css 접두사 자동으로 생성시켜주는 스크립트 -->
+    <script src="./script/prefixfree.min.js"></script>
+
+    <!-- 움직이는 공 자바스크립트 -->
+    <script src="./script/ball.js"></script>
+
+    <!-- 제이쿼리 UI -->
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <!-- 메인자바스크립트 연결 -->
+    <script src="./script/main.js"></script>
+
+    <!--제이쿼리 쿠키파일 -->
+    <script src="./script/jquery.cookie.js"></script>
+
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header>
+      <div id="box01">
+        <h1>
+          <a href="index.html" title="메인페이지로 바로가기"
+            ><img src="./icons/small01.png" alt="메인로고이미지"
+          /></a>
+        </h1>
+
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="#profile" title="프로필" class="arctic_scroll"
+                >PROFILE</a
+              >
+            </li>
+            <li>
+              <a href="#project" title="프로젝트" class="arctic_scroll"
+                >PROJECT</a
+              >
+            </li>
+            <li>
+              <a href="#programming" title="프로그래밍" class="arctic_scroll"
+                >PROGRAMMING</a
+              >
+            </li>
+            <li>
+              <a href="#contact" title="컨텍트미" class="arctic_scroll"
+                >CONTACT ME!</a
+              >
+            </li>
+            <li><a href="#pdf" title="PDF다운로드">PDF 다운로드</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 메인컨텐츠 -->
+    <main>
+      <canvas id="canvas"></canvas>
+      <section id="bubble">
+        <div class="bubble_info">
+          <h2>
+            <span class="point">G</span>wi <span class="point">R</span>yeong
+            <span class="point">P</span>ortfolio
+          </h2>
+          <img src="./icons/jack-orange.png" alt="메인캐릭터" />
+        </div>
+
+        <!--  메인 배너에 위치 성격 아이콘들  -->
+        <img src="./icons/hard.png" alt="아이콘01" class="hard" />
+        <img src="./icons/lively.png" alt="아이콘02" class="lively" />
+        <img src="./icons/puple.png" alt="아이콘03" class="puple" />
+        <img src="./icons/maker.png" alt="아이콘04" class="maker" />
+        <img src="./icons/sincerity.png" alt="아이콘05" class="sincerity" />
+        <img src="./icons/bank.png" alt="아이콘06" class="bank" />
+        <img src="./icons/passion.png" alt="아이콘07" class="passion" />
+
+        <a
+          href="#profile"
+          title="다음페이지로 이동"
+          class="arctic_scroll"
+          id="next_btn"
+          >아래로 이동</a
+        >
+      </section>
+
+      <span class="status1">세로 스크롤값</span>
+
+      <!-- 프로필 -->
+      <section id="profile">
+        <h3>PROFILE</h3>
+        <div class="box02">
+
+          <img src="./img/photo01.png" alt="증명사진" class="id_photo" />
+
+          <img src="./icons/graph.png" alt="성향그래프" class="graph01" />
+
+          <img src="./icons/bar01.png" alt="커리어바" class="bar">
+
+          <!-- career -->
+          <dl class="career">
+            <h2>CAREER</h2>
+
+            <div class="white">
+              <dt>웹디자인 기능사 자격증 취득 예정</dt>
+              <dt>2021.08.23 - 2022.01.18</dt>
+              <dd>[과정평가형]웹디자인기능사<br>(웹퍼블리셔,일러,포토,HTML5,CSS3,jQuery)취업B</dd>
+              <p>장소:그린컴퓨터아트학원 종로점</p>
+            </div>
+
+            <div class="white">
+              <dt>서울시립대학교 철학과 졸업</dt>
+              <dt>2013.03월 입학 - 2019.08월 졸업</dt>
+            </div>
+
+            <div class="white">
+              <dt>김제여자고등학교 졸업</dt>
+              <dt>2010.03월 입학 - 2013.02 졸업</dt>
+              <dd>전라북도 김제시 토박이 출신<br>김제초등학교, 김제여자중학교 졸업</dd>
+              <dd>인문학동아리 '르네필'회장, 학교 전교 부회장<br>전북청소년영화제 2011년 대상<썸씽>/감독 기획 연출 시나리오</dd>
+            </div>
+          </dl>
+
+          <!-- 역량 -->
+          <div class="wrapper">
+            <ul class="graph02">
+
+              <li class="ps">
+                <span>PS</span>
+                <h2>Adobe Photoshop CC</h2>
+                <strong class="orange01 eighty">80%</strong>
+              </li>
+
+              <li class="ia">
+                <span>IA</span>
+                <h2>Adobe Illustrator CC</h2>
+                <strong id="85" class="orange01 eighty-five">85%</strong>
+              </li>
+
+              <li class="xd">
+                <span>XD</span>
+                <h2>Adobe XD</h2>
+                <strong class="orange01 ninety">90%</strong>
+              </li>
+
+              <li class="html">
+                <span>HTML</span>
+                <h2>HTML5</h2>
+                <strong class="orange01 eighty">80%</strong>
+              </li>
+
+              <li class="css">
+                <span>CSS</span>
+                <h2>CSS3</h2>
+                <strong class="orange01 eighty">80%</strong>
+              </li>
+
+              <li class="js">
+                <span>JAVA script<br>jQuery</span>
+                <h2>JAVA script & jQuery</h2>
+                <strong class="orange01 sixty-five">65%</strong>
+              </li>
+            </ul>
+          </div>
+
+          <!-- hobby -->
+          <ul class="hobby">
+            <h2><img src="./icons/hardwork.png">HOBBY</h2>
+            <li class="film"><img src="./icons/film.png" alt="영화보기 아이콘">영화보기</li>
+            <li class="book"><img src="./icons/book.png" alt="독서하기 아이콘">독서하기</li>
+            <li class="chair"><img src="./icons/chair.png" alt="앉아있기 아이콘">앉아있기</li>
+            <li class="scissors"><img src="./icons/scissors.png" alt="손재주 아이콘">손재주</li>
+            <li class="music"><img src="./icons/music.png" alt="음악감상 아이콘">음악감상</li>
+          </ul>
+
+          <!-- 언어 language -->
+          <div class="language">
+            <h2><img src="./icons/language.png">LANGUAGE</h2>
+
+            <div class="charts">
+              <div class="chart">
+                <h2 data-num="90">0</h2>
+                <p>KR</p>
+                <svg>
+                  <circle cx="60" cy="60" r="50"></circle>
+                </svg>
+              </div>
+
+              <div class="chart">
+                <h2 data-num="60">0</h2>
+                <p>EN</p>
+                <svg>
+                  <circle cx="60" cy="60" r="50"></circle>
+                </svg>
+              </div>
+
+              <div class="chart">
+                <h2 data-num="40">0</h2>
+                <p>FR</p>
+                <svg>
+                  <circle cx="60" cy="60" r="50"></circle>
+                </svg>
+              </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 프로젝트 -->
+      <section id="project">
+        <h3>PROJECT</h3>
+
+        <div id="gallery">
+          <ul>
+            <li>
+              <a href="./img/artboard01.jpg" title="ricekimje 상세페이지"><img src="./icons/01.png" alt="ricekimje 로고"></a>  
+            </li>
+
+            <li>
+              <a href="#" title="김제모악산캠핑파크 상세페이지"><img src="./icons/02.png" alt="김제모악산캠핑파크 로고"></a>
+            </li>
+
+            <li>
+              <a href="#" title="한라산소주 상세페이지"><img src="./icons/03.png" alt="한라산 소주 로고"></a>
+            </li>
+
+            <li>
+              <a href="./img/artboard04.jpg" title="웨스앤더슨 상세페이지"><img src="./icons/04.png" alt="웨스앤더슨 로고">
+            </li>
+
+            <li>
+              <a href="#" title="포트폴리오 상세페이지"><img src="./icons/05.png" alt="포트폴리오 상세페이지"></a>
+            </li>
+          </ul>
+
+          <div class="banner">
+            <a href="./img/artboard01.jpg" title="ricekimje 상세페이지"><img src="./img/artboard01.jpg" alt="ricekimje 상세페이지"></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- programming 공부했던 내용 -->
+      <section id="programming">
+        <h3>PROGRAMMING</h3>
+
+        <article id="gallery02">
+          <nav class="g_lnb">
+            <ul>
+              <li><a href="#" title="all">ALL</a></li>
+              <li><a href="#" title="html5">HTML</a></li>
+              <li><a href="#" title="css3">CSS</a></li>
+              <li><a href="#" title="JAVAscript">JAVAscript</a></li>
+              <li><a href="#" title="jQuery">jQuery</a></li>
+            </ul>
+          </nav>
+
+          <ul class="g_list">
+
+            <!-- 0914 html -->
+            <li class="html5"><a href="http://rnlfud0755.dothome.co.kr/0914/07_practice.html"><img src="./icons/html.png" alt="html07"><span class="caption">HTML 활용 연습01</span></a></li>
+
+            <!-- 0928 css -->
+            <li class="css3"><a href="http://rnlfud0755.dothome.co.kr/0928/25_css_practice01.html"><img src="./icons/css.png" alt="css25"><span class="caption">CSS 활용 실습예제01</span></a></li>
+            <li class="css3"><a href="http://rnlfud0755.dothome.co.kr/0928/26_css_practice02.html"><img src="./icons/css.png" alt="css26"><span class="caption">CSS 활용 실습예제02</span></a></li>
+            <li class="css3"><a href="http://rnlfud0755.dothome.co.kr/0928/27_css_practice03.html"><img src="./icons/css.png" alt="css27"><span class="caption">CSS 활용 실습예제03</span></a></li>
+
+            <!-- 1115 자바스크립트 -->
+            <li class="JAVAscript"><a href="http://rnlfud0755.dothome.co.kr/1115/javascript-practice04.html"><img src="./icons/js.png" alt="JAVAscript"><span class="caption">베라아이스크림 썸네일갤러리 벤치마킹 구현 </span></a></li>
+
+            <!-- 0915 html -->
+            <li class="html5"><a href="http://rnlfud0755.dothome.co.kr/0915/10.practice.html"><img src="./icons/html.png" alt="html10"><span class="caption">HTML 활용 연습02</span></a></li>
+
+            <!-- 1202 jquery -->
+            <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1202/jQuery06_starbucks-nav.html"><img src="./icons/jquery.png" alt="jquery06"><span class="caption">제이쿼리 활용 스타벅스 내비게이션</span></a></li>
+            <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1202/jQuery07_starbucks-Q&A.html"><img src="./icons/jquery.png" alt="jquery07"><span class="caption">제이쿼리 활용 스타벅스 Q&A</span></a></li>
+
+            <!-- 0916 html -->
+            <li class="html5"><a href="http://rnlfud0755.dothome.co.kr/0916/13_hyperlink.html"><img src="./icons/html.png" alt="html13"><span class="caption">하이퍼링크 </span></a></li>
+
+            <!-- 1129 자바스크립트 -->
+            <li class="JAVAscript"><a href="http://rnlfud0755.dothome.co.kr/1129/realization(4)/index.html"><img src="./icons/js.png" alt="JAVAscript"><span class="caption">하림팻푸드 벤치마킹 구현하기 </span></a></li>
+
+            <!-- 1206 jquery -->
+            <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1206/jQuery08.html"><img src="./icons/jquery.png" alt="jquery08"><span class="caption">제이쿼리 활용 광고배너01</span></a></li>
+
+            <!-- 1207 jquery -->
+            <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1206/jQuery08+controlbutton.html"><img src="./icons/jquery.png" alt="jquery08-2"><span class="caption">제이쿼리 활용 광고배너02</span></a></li>
+
+            <!-- 0917 html -->
+            <li class="html5"><a href="http://rnlfud0755.dothome.co.kr/0917/16_table_practice.html"><img src="./icons/html.png" alt="html16"><span class="caption">테이블실습</span></a></li>
+            <li class="html5"><a href="http://rnlfud0755.dothome.co.kr/0917/17_phonenumber.html"><img src="./icons/html.png" alt="html17"><span class="caption">국립박물관문화재단 연락처 안내 </span></a></li>
+
+            <!-- 0930 css -->
+            <li class="css3"><a href="http://rnlfud0755.dothome.co.kr/0930/38_css_practice05.html"><img src="./icons/css.png" alt="css38"><span class="caption">CSS 활용 실습예제05</span></a></li>
+
+            <!-- 1111 css -->
+            <li class="css3"><a href="http://rnlfud0755.dothome.co.kr/1111/css_layout-grid_practice.html"><img src="./icons/css.png" alt="css3"><span class="caption">CSS 그리드 레이아웃01</span></a></li>
+
+            <!-- 1112 css -->
+            <li class="css3"><a href="http://rnlfud0755.dothome.co.kr/1112/css_layout-grid_practice02.html"><img src="./icons/css.png" alt="css3"><span class="caption">CSS 그리드 레이아웃02</span></a></li>
+
+            <!-- 0923 html -->
+            <li class="html5"><a href="http://rnlfud0755.dothome.co.kr/0923/18_iframe_tag.html"><img src="./icons/html.png" alt="html18"><span class="caption">아이프레임</span></a></li>
+            <li class="html5"><a href="http://rnlfud0755.dothome.co.kr/0923/19_multimedia.html"><img src="./icons/html.png" alt="html19"><span class="caption">멀티미디어태그</span></a></li>
+
+            <!-- 1209 jquery -->
+            <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1209/jQuery10_animate.html"><img src="./icons/jquery.png" alt="jquery10"><span class="caption">제이쿼리 animate01</span></a></li>
+
+            <!-- 1210 jquery -->
+            <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1210/jQuery12_animate-BR-nav(2).html"><img src="./icons/jquery.png" alt="jquery13"><span class="caption">베스킨라빈스 내비게이션 벤치마킹 구현</span></a></li>
+            <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1210/jQuery13_animate02.html"><img src="./icons/jquery.png" alt="jquery13"><span class="caption">제이쿼리 animate02</span></a></li>
+
+            <!-- 1027 자바스크립트 -->
+            <li class="JAVAscript"><a href="http://rnlfud0755.dothome.co.kr/1027/index.html"><img src="./icons/js.png" alt="JAVAscript"><span class="caption"> 자바스크립트 활용 아프리카동물 메디컬 벤치마킹 구현 </span></a></li>
+
+             <!-- 1229 jquery -->
+             <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1223/casper(3)/index.html"><img src="./icons/jquery.png" alt="jquery"><span class="caption">PC형 캐스퍼 스크롤원페이지 벤치마킹 구현</span></a></li>
+
+            <!-- 0924 html -->
+            <li class="html5"><a href="http://rnlfud0755.dothome.co.kr/0924/20_form.html"><img src="./icons/html.png" alt="html20"><span class="caption">폼태그</span></a></li>
+            <li class="html5"><a href="http://rnlfud0755.dothome.co.kr/0924/21_naver_membership_agree.html"><img src="./icons/html.png" alt="html19"><span class="caption">네이버 멤버십 이용약관 벤치마킹 구현</span></a></li>
+
+            <!-- 1005 css -->
+            <li class="css3"><a href="http://rnlfud0755.dothome.co.kr/1005/vistawalkerhill/index.html"><img src="./icons/css.png" alt="css 워커스타힐 구현"><span class="caption">CSS 활용 워커스타힐 벤치마킹 구현</span></a></li>
+
+            <!-- 1215 jquery -->
+            <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1215/jQuery17_gallery.html"><img src="./icons/jquery.png" alt="jquery17"><span class="caption">스크롤 갤러리 구현+썸네일 갤러리 구현01</span></a></li>
+
+            <!-- 1216 jquery -->
+            <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1216/jQuery19_DOM-gallery02.html"><img src="./icons/jquery.png" alt="jquery19"><span class="caption">썸네일 갤러리 구현02</span></a></li>
+            
+            <!-- 1110 자바스크립트 -->
+            <li class="JAVAscript"><a href="http://rnlfud0755.dothome.co.kr/1110/javascript-practice01.html"><img src="./icons/js.png" alt="JAVAscript 연습01"><span class="caption"> 자바스크립트 활용 실습예제01_지출내역관리</span></a></li>
+            <li class="JAVAscript"><a href="http://rnlfud0755.dothome.co.kr/1110/javascript-practice02.html"><img src="./icons/js.png" alt="JAVAscript 연습02"><span class="caption"> 자바스크립트 활용 실습예제02_로그인폼</span></a></li>
+            <li class="JAVAscript"><a href="http://rnlfud0755.dothome.co.kr/1110/javascript-practice03.html"><img src="./icons/js.png" alt="JAVAscript 연습03"><span class="caption"> 자바스크립트 활용 실습예제03_체지방계산하기</span></a></li>
+
+             <!-- 1228 jquery -->
+             <li class="jQuery"><a href="http://rnlfud0755.dothome.co.kr/1228/index_etude.html"><img src="./icons/jquery.png" alt="jquery"><span class="caption">모바일형 에띄드하우스 내비게이션+슬라이드 이미지 벤치마킹구현</span></a></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- 컨텍트미! -->
+      <section id="contact">
+        <h3>CONTACT ME!</h3>
+          <img src="./img/photoes.png" alt="사진만">
+
+          <form name="이메일폼" action="send.php" method="post">
+          <div>
+            <fieldset>
+              <legend><img src="./icons/email.png"></legend>
+              <p>
+                <label for="subject">*제목:</label>
+                <input type="text" id="subject" name="subject" placeholder="제목을 입력해주세요" required>
+              </p>
+
+              <p>
+                <label for="name">*이름:</label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력해주세요" required>
+              </p>
+
+              <p>
+                <label for="email">*이메일 주소:</label>
+                <input type="email" id="email" name="email" placeholder="이메일 주소를 입력해주세요" required>
+              </p>
+
+              <p>
+                <label for="message">*내용</label>
+                <textarea row="10" name="message" id="message"></textarea>
+              </p>
+
+              <p>
+                <input type="submit" value="send" class="send_btn">
+              </p>
+            </fieldset>
+          </div>
+          </form>
+      </section>
+    </main>
+
+    <!-- 푸터영역 -->
+    <footer>
+      <div class="box03">
+        <h2><a href="index.html" title="하단로고"><img src="./icons/small02.png" alt="하단로고"></a></h2>
+        <ul>
+          <li>Profile</li>
+          <li>Project</li>
+          <li>Programming</li>
+          <li>Contact ME!</li>
+        </ul>
+
+        <a href="https://www.facebook.com/profile.php?id=100005320262993"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.instagram.com/gr.lee.5616"><i class="fab fa-instagram"></i></a>
+
+        <address>Copyright &#x24D2; 2021. LEE Gwi-Ryeong PROFILE & PORTFOLIO. All Right Reserved. </address>
+      </div>
+    </footer>
+
+    <script src="./script/swiper.js"></script>
+    <script src="./script/jquery.arctic_scroll.js"></script>
+
+    <script>
+      $(function () {
+        $(".arctic_scroll").arctic_scroll({
+          speed: 800,
+        });
+      });
+    </script>
+  </body>
+</html>
