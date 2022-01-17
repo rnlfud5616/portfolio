@@ -54,7 +54,7 @@ $(document).ready(function(){
         n = $(this).index()+1;
         console.log(n);
 
-        $('.banner> a img').attr('src', './img/artboard0'+n+'.jpg').css('opacity','0').stop().animate({'opacity':'1'}, 1000);
+        $('.banner > a img').attr('src', './img/artboard0'+n+'.jpg').css('opacity','0').stop().animate({'opacity':'1'}, 1000);
 
         return false;
     });
@@ -99,27 +99,5 @@ $(document).ready(function(){
     jQuery.click(function(){
         $('.g_list >li').hide();
         $('.jQuery').stop().fadeIn();
-    });
-
-    //전체 모달창 만들기
-    let modal = '<div class="modal"><img src="./img/modal_cookie.jpg"><p><input type="checkbox" id="ch"><label for="ch">오늘 하루 창 열지 않음</label><input type="button" value="닫기" id="c_btn"></p></div>';
-
-    $('body').append(modal);
-
-    if($.cookie('popup')=='none'){
-        $('.modal').hide();
-    }
-
-    let $ex = $('.modal #ch')
-
-    function closeModal(){
-        if($ex.is(':checked')){
-            $.cookie('popup', 'none', {expires:1,path:'/'});
-        }
-        $('.modal').hide();
-    }
-
-    $('#c_btn').click(function(){
-        closeModal();
     });
 });
